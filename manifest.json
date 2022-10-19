@@ -1,11 +1,11 @@
 {
-    "name": "web_test",
-    "short_name": "web_test",
+    "name": "rw_user_center",
+    "short_name": "rw_user_center",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "用户中心Web项目",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
