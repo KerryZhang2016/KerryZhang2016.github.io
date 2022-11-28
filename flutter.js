@@ -42,7 +42,7 @@ _flutter.loader = null;
      */
     loadEntrypoint(options) {
       const {
-        entrypointUrl = "main.dart.js",
+        entrypointUrl = "https://static.rndwk.com/usercenter/main.dart.0d157c4a6e64c9ec9f90a09c072a4a70.js",
         serviceWorker,
       } = (options || {});
       return this._loadWithServiceWorker(entrypointUrl, serviceWorker);
