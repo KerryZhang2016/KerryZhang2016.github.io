@@ -34,26 +34,41 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '988670641';
+    var serviceWorkerVersion = '2199753886';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
-<body>
-  <div id="loading"></div>
+<style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex; /* Default Axis is X*/
+        justify-content: center; /* Main Axis */
+        align-items: center; /* Cross Axis */
+      }
+      .indicator{
+        width: 30vw;
+      }
+</style>
+<body style="overflow: hidden">
+  <div id="loadingText"></div>
+  <div id="loading_indicator" class="container">
+    <img class="indicator" src="./assets/loading.gif" />
+  </div>
   <script>
      window.addEventListener('load', function(ev) {
-       var loading = document.querySelector('#loading');
-       loading.textContent = "Loading...";
+       var loadingText = document.querySelector('#loadingText');
+       loadingText.textContent = "Loading...";
        _flutter.loader.loadEntrypoint({
          serviceWorker: {
            serviceWorkerVersion: serviceWorkerVersion,
          }
        }).then(function(engineInitializer) {
-         loading.textContent = "Initializing...";
+         loadingText.textContent = "Initializing...";
          return engineInitializer.initializeEngine();
        }).then(function(appRunner) {
-         loading.textContent = "Running app...";
+         loadingText.textContent = "Running app...";
          return appRunner.runApp();
        });
      });
