@@ -1,11 +1,11 @@
 {
-    "name": "rw_user_center",
-    "short_name": "rw_user_center",
+    "name": "lexicon_website",
+    "short_name": "lexicon_website",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "用户中心Web项目",
+    "description": "Lexicon Finance Website",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

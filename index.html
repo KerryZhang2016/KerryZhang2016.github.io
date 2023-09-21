@@ -18,60 +18,41 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="用户中心">
+  <meta name="description" content="Lexicon Finance Website">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="rw_user_center">
+  <meta name="apple-mobile-web-app-title" content="lexicon_website">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>UserCenter</title>
+  <title>lexicon_website</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1462955944';
+    var serviceWorkerVersion = '1080464430';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
-<style>
-      .container {
-        width: 100vw;
-        height: 100vh;
-        display: flex; /* Default Axis is X*/
-        justify-content: center; /* Main Axis */
-        align-items: center; /* Cross Axis */
-      }
-      .indicator{
-        width: 30vw;
-      }
-</style>
-<body style="overflow: hidden">
-  <div id="loadingText"></div>
-  <div id="loading_indicator" class="container">
-    <img class="indicator" src="./assets/loading.gif" />
-  </div>
+<body>
   <script>
-     window.addEventListener('load', function(ev) {
-       var loadingText = document.querySelector('#loadingText');
-       loadingText.textContent = "Loading...";
-       _flutter.loader.loadEntrypoint({
-         serviceWorker: {
-           serviceWorkerVersion: serviceWorkerVersion,
-         }
-       }).then(function(engineInitializer) {
-         loadingText.textContent = "Initializing...";
-         return engineInitializer.initializeEngine();
-       }).then(function(appRunner) {
-         loadingText.textContent = "Running app...";
-         return appRunner.runApp();
-       });
-     });
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
   </script>
 </body>
 </html>
