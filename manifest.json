@@ -1,11 +1,11 @@
 {
-    "name": "lexicon_website",
-    "short_name": "lexicon_website",
+    "name": "wallet",
+    "short_name": "wallet",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Lexicon Finance Website",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
