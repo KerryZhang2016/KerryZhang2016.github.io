@@ -27000,28 +27000,29 @@ case 5:return A.w(null,r)
 case 1:return A.v(p,r)}})
 return A.x($async$qA,r)},
 OA(a){return A.aXD(a)},
-aXD(a){var s=0,r=A.y(t.sP),q,p=2,o,n,m,l,k,j
+aXD(a){var s=0,r=A.y(t.sP),q,p=2,o,n,m,l,k,j,i
 var $async$OA=A.z(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
 return A.m(new A.wm(J.aJh(("ethereum" in window.window||"BinanceChain" in window.window?new A.x2(new ethers.providers.Web3Provider(t.sC.a(A.md()).a)):null).a),t.CX).a6k(0,"getAddress",t.N),$async$OA)
-case 7:l="ethereum" in window.window||"BinanceChain" in window.window?new A.x2(new ethers.providers.Web3Provider(t.sC.a(A.md()).a)):null
-l.toString
+case 7:n=c
+k="ethereum" in window.window||"BinanceChain" in window.window?new A.x2(new ethers.providers.Web3Provider(t.sC.a(A.md()).a)):null
+k.toString
 s=8
-return A.m(l.$1$2("estimateGas",[new A.W6({to:a.a,from:"0x3f7d7458925c3b40692Fa9830Aa0773a5CB4B514",value:null,gasLimit:null,gasPrice:null,nonce:null,data:a.b,accessList:null,maxFeePerGas:null,maxPriorityFeePerGas:null})],t.sP),$async$OA)
-case 8:n=c
-q=n
+return A.m(k.$1$2("estimateGas",[new A.W6({to:a.a,from:n,value:null,gasLimit:null,gasPrice:null,nonce:null,data:a.b,accessList:null,maxFeePerGas:null,maxPriorityFeePerGas:null})],t.sP),$async$OA)
+case 8:m=c
+q=m
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-j=o
-m=A.a3(j)
-A.cm("EthereumModel estimateGas error: "+A.f(J.bL(m)))
-l=A.pr(0)
-q=l
+i=o
+l=A.a3(i)
+A.cm("EthereumModel estimateGas error: "+A.f(J.bL(l)))
+k=A.pr(0)
+q=k
 s=1
 break
 s=6
@@ -88234,7 +88235,7 @@ s===$&&A.b()
 return s},
 $S:529}
 A.axU.prototype={
-$2(a,b){var s=null,r=t.p,q=A.cf(s,A.fg(A.a([A.cf(s,A.ch("Lexicon Manage",s,s,s,s,s,s,s,A.nC(B.q,20),s,s,s),B.r,s,s,s,s,65,B.JU,s,s,s,s)],r),B.Y,B.ap,B.a8),B.r,s,s,s,s,s,s,B.em,s,s,255),p=A.a([this.a.a6c(b)],r)
+$2(a,b){var s=null,r=t.p,q=A.cf(s,A.fg(A.a([A.cf(s,A.ch("Lexicon Manage\n10-18 13:00",s,s,s,s,s,s,s,A.nC(B.q,20),s,s,s),B.r,s,s,s,s,65,B.JU,s,s,s,s)],r),B.Y,B.ap,B.a8),B.r,s,s,s,s,s,s,B.em,s,s,255),p=A.a([this.a.a6c(b)],r)
 if(b.a.length===0)p.push(A.hb(A.cf(B.M,A.ch("Please login with your wallet",s,s,s,s,s,s,s,A.fA(B.q,16),s,s,s),B.r,s,s,s,s,s,s,s,s,s,s)))
 else p.push(A.hb(A.cf(B.M,A.fg(A.a([A.ch("Welcome to Lexicon Manage",s,s,s,s,s,s,s,A.fA(B.q,16),s,s,s),A.cf(s,A.Ek(!1,new A.axT(a),"Connect Vault to Dapp"),B.r,s,s,s,s,45,B.JT,s,s,s,s)],r),B.Y,B.c3,B.a8),B.r,s,s,s,s,s,s,s,s,s,s)))
 return A.ll(A.a([q,A.hb(A.fg(p,B.Y,B.ap,B.a8))],r),B.Y,B.ap,B.a8)},
