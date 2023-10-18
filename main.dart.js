@@ -26953,7 +26953,7 @@ A.cm("fundManageSendTransaction estimateGas: "+A.f(l))
 a1=J.tQ(l,A.pr(0))
 if(a1===0){a1=o.b
 k=B.C.gcu().aN(a1)
-l=A.pr(21e3+J.aQ(k)*200)
+l=A.pr(21e3+J.aQ(k)*1000)
 A.cm("fundManageSendTransaction calculate estimateGas: "+A.f(l))}s=o.c!=="multicall"?7:9
 break
 case 7:s=10
